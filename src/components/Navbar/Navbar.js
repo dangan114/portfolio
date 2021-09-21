@@ -53,7 +53,7 @@ function Navbar(props) {
     }, [scrollTop])
 
     const CurrentHighlight = styled.div`
-        border-bottom: ${props => props.current ? '5px solid black': 'none'}
+        border-bottom: ${props => props.current ? '5px solid white': 'none'}
     `
 
     return (

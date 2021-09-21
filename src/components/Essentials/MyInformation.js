@@ -1,3 +1,6 @@
+import { FaReact } from "react-icons/fa"
+import { SiFlutter, SiJava, SiGoogle } from "react-icons/si"
+
 export const MY_LANGUAGES = [
     {
         name: 'Java',
@@ -35,7 +38,7 @@ export const MY_TECHNOLOGY = [
 export const MY_PROJECTS = [
     {
         name: 'Simon App',
-        technology: 'Flutter',
+        technology: [<SiFlutter />, <SiJava />],
         images: [
             '1200px-Virginia_Tech_seal.png'
         ],
@@ -49,14 +52,14 @@ export const MY_PROJECTS = [
     },
     {
         name: 'Travel Diary',
-        technology: 'ReactJs',
+        technology: [<FaReact />, <SiGoogle />],
         images: [
             '1200px-Virginia_Tech_seal.png'
         ],
         description: [
             'Travel Diary is a web application used to rate hotels',
             'It uses Places API and Programmable Search Engine of Google to retrieve information of the hotels',
-            'The users can rank the hotesl and the result will be stored locally in their browsers'
+            'The users can rank the hotels and the result will be stored locally in their browsers'
         ]
     },
 ]

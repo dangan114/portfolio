@@ -4,11 +4,12 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { FaBars } from 'react-icons/fa';
 
 export const Nav = styled.nav`
-    background: #861F41;
+    background: #007577;
     height: 100vh;
     position: sticky;
     top: 0;
     z-index: 12;
+    opacity: 0.8;
 
     @media only screen and (max-width: 768px) {
         display: none;
@@ -28,7 +29,7 @@ export const NavLink = styled(Link)`
     text-decoration: none;
 
     font-size: 2rem;
-
+    color: white;
     cursor: pointer;
     flex: 1;
 

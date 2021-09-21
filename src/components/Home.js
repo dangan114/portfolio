@@ -29,23 +29,23 @@ function Home() {
             </NavbarCol>
             
             <Col size={4} style={{margin: 'auto'}}>
-                <div ref={introRef} id="home" style={{ marginBottom: '100vh'}}>
+                <div ref={introRef} id="home" style={{ marginBottom: '50vh'}}>
                     <Intro />
                 </div>
             
-                <div ref={skillRef} id="skills" style={{ marginBottom: '100vh'}}>
+                <div ref={skillRef} id="skills" style={{ marginBottom: '50vh'}}>
                     <Skills />
                 </div>
 
-                <div ref={experienceRef} id="experiences" style={{ marginBottom: '100vh'}}>
+                <div ref={experienceRef} id="experiences" style={{ marginBottom: '50vh'}}>
                     <Experiences />
                 </div>
 
-                <div ref={educationRef} id="education">
+                <div ref={educationRef} id="education" style={{ marginBottom: '50vh'}}>
                     <Education />
                 </div>
 
-                <div ref={contactRef} id="contact">
+                <div ref={contactRef} id="contact" style={{ marginBottom: '50vh'}}>
 
                 </div>
                 

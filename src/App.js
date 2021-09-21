@@ -4,7 +4,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <div style={{ background: 'url(/background.gif) no-repeat center center fixed', backgroundSize: 'cover', minWidth: '500px'}}>
+    <div style={{ fontFamily: 'Andale Mono, monospace', background: 'url(/background_forest.gif) no-repeat center center fixed', backgroundSize: 'cover', minWidth: '500px'}}>
        <Router>
         <Switch>
         <Route path='/' exact component={Home} />

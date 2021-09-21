@@ -7,6 +7,7 @@ const IntroText = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 5rem;
 `;
 
 const ImageTag = styled.img`
@@ -19,27 +20,24 @@ const ImageTag = styled.img`
 function Intro() {
     return (
         <Row>
-            <Col size={2}>
+            <Col>
                 <IntroText>
-                    <h1>
-                        Web/Mobile Developer
+                    <h1 style={{fontSize: '100px'}}>
+                        Hello.
                     </h1>
-                    <h3>
-                        I believe in specialization. 
-                        I believe that everyone in the society has a role to bring valued input to the table. 
-                        Hence everyone should be treated with respect and dignity.
-                    </h3>
-                    <button>
-                        Hire me
-                    </button>
+                    <div style={{fontSize: '30px', padding: '0 8rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', backgroundColor: 'white', height: '80vh', opacity: 0.6}}>
+                        <h3>I am a web/mobile developer/tech savvy/gamer/foodie.</h3>
+                        <h3>I believe in specialization. </h3>
+                        <h3>I believe that everyone in the society has a role to bring valued input to the table. </h3>
+                    </div>
                 </IntroText>
             
             </Col>
-            <Col size={1}>
+            {/* <Col size={1}>
                 <div>
                     <ImageTag src="/1200px-Virginia_Tech_seal.png" alt="My_Portrait"/>
                 </div>
-            </Col>
+            </Col> */}
         </Row>
     )
 }

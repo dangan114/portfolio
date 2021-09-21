@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Col, Row } from "../Essentials/Grid";
 import { MY_PROJECTS } from "../Essentials/MyInformation";
 
+import { SiJava, SiFlutter } from 'react-icons/si' 
+
 function Experiences() {
 
     const Box = styled.div`
@@ -35,7 +37,8 @@ function Experiences() {
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        background-color: #cccccc;
+        background-color: white;
+        opacity: 0.8;
         color: #111111;
     `
 
@@ -44,8 +47,9 @@ function Experiences() {
         width: 100%;
         height: 100%;
         backface-visibility: hidden;
-        background-color: #8ebf42;
-        color: #eeeeeee;
+        background-color: #007577;
+        opacity: 0.8;
+        color: white;
         transform: rotateY(180deg);
     `
 
@@ -57,17 +61,26 @@ function Experiences() {
                 {/*  The project card */}
                 <Box>
                     <InnerBox>
-                        <FrontBox>
-                        <h1 style={{height: '50vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <FrontBox style={{height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                            <h1 >
                                 {project.name}
                             </h1>
+                         
+                            <div style={{fontSize: '50px', display: 'flex'}}>
+                                {project.technology.map(tech => {
+                                    return <div style={{margin: '0 1rem'}}>{tech}</div>
+                                }
+                                )}
+                            </div>
+                            
+                          
+                           
                         </FrontBox>
 
                         <BackBox>
                             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', margin: 'auto'}}>
                                 <div>
-                                    <img src={project.images[0]} width="100vw" height="100vh" />         
-                           
+                                    {/* <img src={project.images[0]} width="100vw" height="100vh" /> */}
                                     <ul>
                                     {project.description.map(desc => {
                                         return <li style={{listStyleType: 'none', padding: '1rem 0', textAlign: 'left'}}>{desc}</li>
@@ -109,7 +122,7 @@ function Experiences() {
 
     return (
         <div>
-            <h1>Experiences</h1>
+            <h1 style={{textAlign: 'center', color: 'white', fontSize: '65px', textShadow: '0 0 5px #000'}}>Experiences</h1>
             <Row>
                { projectCard }
             </Row>
