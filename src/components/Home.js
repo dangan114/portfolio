@@ -29,7 +29,12 @@ function Home() {
         background-size: cover;
         -o-background-size: cover;
         -moz-background-size: cover;
-        -webkit-background-size:cover;
+        -webkit-background-size: cover;
+
+        @media (max-width: 425px) {
+            background-attachment: scroll;
+        }
+
     `
 
     return (
