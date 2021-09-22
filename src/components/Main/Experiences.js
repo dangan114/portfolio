@@ -93,29 +93,6 @@ function Experiences() {
                     </InnerBox>
                   
                 </Box>
-                {/* <div style={{ border: '5px solid red', backgroundColor: 'white', boxShadow: '10px 10px 8px #888888', width: '30vw'}}>
-                
-                        <h1 style={{height: '50vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                            {project.name}
-                        </h1>
-                    {/* <div style={{borderTop: '5px solid red'}}>
-                        <div style={{textAlign: 'center'}}>
-                            <img src={project.images[0]} width="100vw" height="100vh" />
-                            <img src={project.images[0]} width="100vw" height="100vh" />
-                            <img src={project.images[0]} width="100vw" height="100vh" />
-                            <img src={project.images[0]} width="100vw" height="100vh" />
-                        </div>
-                        <div>
-                            <ul>
-
-                            {project.description.map(desc => {
-                                return <li>{desc}</li>
-                            })}
-                            </ul>
-                        </div>
-                </div>
-          </div> */}
-          
       </Col>
         );
     })

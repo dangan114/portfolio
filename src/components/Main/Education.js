@@ -11,9 +11,10 @@ function Education() {
         text-align: center;
         position: relative;
         margin: auto;
-        top: -80px;
-        width: 3%;
-        height: 10rem;
+        padding: 4rem
+        top: -20%;
+        width: 1vw;
+        height: 100%;
         background-color: lightblue;
     `;
 
@@ -21,6 +22,27 @@ function Education() {
         flex: ${props => props.size};
         @media (max-width: 768px) {
             display: none;
+        }
+    `
+
+    const SchoolCol = styled(Col)`
+        flex: ${props => props.size};
+        @media (max-width: 768px) {
+            margin: 10rem 0;
+            background-color: white;
+            opacity: 0.75;
+            padding: 4rem;
+        }
+    `
+
+    const SchoolList = styled.li`
+        list=style-type: none;
+        background-color: white;
+        margin: 0 2rem;
+        opacity: 0.75;
+
+        @media (max-width: 768px) {
+            background-color: inherit;
         }
     `
 
@@ -39,38 +61,46 @@ function Education() {
             // the last item does not need connecting line
             if (i == edu.length - 1) {
                 return (
-                    <li style={{listStyleType: 'none'}}>
+                    <SchoolList>
                         <Row>
-                            <LogoCol size="1">
+                            <LogoCol size="1" style={{padding: '2rem'}}>
                                 <img src={e.logo} height="100%" width="100%" style={{objectFit: 'contain'}} />
                                 <ConnectingLine style={{visibility: 'hidden'}}></ConnectingLine>
                             </LogoCol>
-                            <Col size="3">
+                            <SchoolCol size="3">
                                 <EducationText>
-                                    <h1>{e.school}</h1>
+                                    <h1 style={{fontSize: '60px', fontWeight: 'bold'}}>{e.school}</h1>
                                     <h2><span>GPA: {e.GPA}</span><span style={{margin: 'auto 10px'}}>&#9775;</span><span>Graduation Date: {e.graduation}</span></h2>
                                 </EducationText>
-                            </Col>
+                            </SchoolCol>
                         </Row>
-                    </li>  
+                    </SchoolList>  
                 )
             } else {
                 return (
-                    <li style={{listStyleType: 'none'}}>
+                    <SchoolList>
                          <Row>
-                            <LogoCol size="1">
-                                <img src={e.logo} height="100%" width="100%" style={{objectFit: 'contain'}}  />
-                                <ConnectingLine></ConnectingLine>
+                            <LogoCol size="1" style={{padding: '2rem'}}>
+                                <div>
+                                    <img src={e.logo} height="100%" width="100%" style={{objectFit: 'contain', display: 'inline-block'}}  />
+                                    
+                                    <hr style={{position: 'relative', top: '5vh', height: '20vh', width: '1vw', backgroundColor: 'lightblue', border: 'none'}} />
+                                </div>
+              
                             </LogoCol>
-                            <Col size="3">
-                                <EducationText>
-                                    <h1>{e.school}</h1>
-                                    <h2><span>GPA: {e.GPA}</span><span style={{margin: 'auto 10px'}}>&#9775;</span><span>Graduation Date: {e.graduation}</span></h2>
-                                </EducationText>
-                            </Col>
+                            <SchoolCol size="3">
+                                <div>
+                                    <EducationText>
+                                        <h1 style={{fontSize: '60px', fontWeight: 'bold'}}>{e.school}</h1>
+                                        <h2>{e.title}</h2>
+                                        <h2><span>GPA: {e.GPA}</span><span style={{margin: 'auto 10px'}}>&#9775;</span><span>Graduation Date: {e.graduation}</span></h2>
+                                    </EducationText>
+                                </div>
+                             
+                            </SchoolCol>
                         </Row>
                       
-                    </li>  
+                    </SchoolList>  
                 )
             }
 
@@ -80,7 +110,7 @@ function Education() {
 
     return (
         <div>
-            <h1 style={{textAlign: 'center'}}>Education</h1>
+            <h1 style={{textAlign: 'center', color: 'white', fontSize: '65px', textShadow: '0 0 5px #000'}}>Education</h1>
             <Row>
                 <Col size={1}>
                     <ul>

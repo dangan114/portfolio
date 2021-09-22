@@ -58,7 +58,6 @@ function Navbar(props) {
 
     return (
         <Nav>
-       
             <NavMenu>
                 <NavButtonLink to="/#home" smooth>
                     <div style={{height: '50%', position: 'relative', top: '10vh'}}>

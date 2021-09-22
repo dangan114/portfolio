@@ -67,27 +67,38 @@ export const MY_PROJECTS = [
 export const MY_EDUCATION = [
     {
         school: 'Virginia Tech',
+        title: 'B.S in Computer Science, major in Secure Computing',
         logo: '1200px-Virginia_Tech_seal.png',
         GPA: 'N/A',
         graduation: 'May 2023'
     },
     {
         school: 'Northern Virginia Community College',
-        logo: '1200px-Virginia_Tech_seal.png',
+        title: 'A.S in Engineering',
+        logo: '1200px-Northern_Virginia_Community_College_seal.png',
         GPA: '3.94/4.00',
         graduation: 'May 2021'
     },
     {
         school: 'St. Lawrence Seminary High School',
-        logo: '1200px-Virginia_Tech_seal.png',
+        title: '',
+        logo: 'St_Lawrence_seal.png',
         GPA: '3.87/4.00',
         graduation: 'May 2017'
     }
 ]
 
+export const MY_BASIC = {
+    name: 'An Dang',
+    email: 'an.dang114@gmail.com',
+    github: 'https://github.com/dangan114',
+    linkedin: 'https://www.linkedin.com/in/an-dang-98b361157/'
+}
+
 export const MY_INFORMATION = {
     languages: MY_LANGUAGES,
     technology: MY_TECHNOLOGY,
     projects: MY_PROJECTS,
-    education: MY_EDUCATION
+    education: MY_EDUCATION,
+    basic: MY_BASIC
 }
