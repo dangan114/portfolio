@@ -23,8 +23,17 @@ function Home() {
         }
     `
 
+    const HomeContainer = styled.div`
+        background: url(/background_mountain.gif) no-repeat center center fixed;
+        display: inline-block;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size:cover;
+    `
+
     return (
-        <div style={{background: 'url(/background_mountain.gif) no-repeat center center fixed', filter:'brightness(100%)', display: 'inline-block', backgroundSize: 'cover'}}>
+        <HomeContainer>
             <Row>
                 {/* The parent element must be the whole page so the sticky element can stick! */}
                 <NavbarCol size={1}>
@@ -54,8 +63,7 @@ function Home() {
                     
                 </Col>     
             </Row>
-        </div>
-        
+        </HomeContainer>
     )
 }
 
