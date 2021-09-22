@@ -9,6 +9,9 @@ function App() {
     font-family: 'Andale Mono, monospace';
     height: 100%;
     width: 100%;
+    @media (max-width: 768px) {
+      width: 768px;
+    }
   `
 
   return (
