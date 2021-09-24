@@ -3,18 +3,19 @@ import styled from "styled-components";
 import { Col, Row } from "../Essentials/Grid";
 
 const IntroText = styled.div`
-    height: 100%;
+    height: 80%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 5rem;
+    margin: 0 auto;
 `;
 
 
 function Intro() {
     return (
-        <div>
+      
                 <IntroText>
                     <h1 style={{fontSize: '100px'}}>
                         Hello.
@@ -27,7 +28,7 @@ function Intro() {
                                 </Col>
                                 <Col size={1} style={{margin: '0 2rem'}}>
                                     <hr style={{position:'relative', width: '70%', backgroundColor: '#007577', height: '10px', top: '45%', left: '-35%'}}></hr>
-                                    <hr style={{position: 'relative', width:'50%', height: '50%', borderLeft: '10px solid #007577', borderTop: '10px solid #007577', borderBottom: '10px solid #007577', top: '15%', left: '25%'}}></hr>
+                                    <hr style={{position: 'relative', width:'50%', height: '50%', borderRight: 'none', borderLeft: '10px solid #007577', borderTop: '10px solid #007577', borderBottom: '10px solid #007577', top: '15%', left: '25%'}}></hr>
 
                                 </Col>
                                 <Col size={1}>
@@ -57,8 +58,6 @@ function Intro() {
                     
                     </div>
                 </IntroText>  
-         
-        </div>
        
     )
 }

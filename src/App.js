@@ -7,8 +7,8 @@ function App() {
 
   const MainContainer = styled.div`
     font-family: 'Andale Mono, monospace';
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     @media (max-width: 768px) {
       width: 768px;
     }
