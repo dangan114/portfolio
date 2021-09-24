@@ -24,16 +24,44 @@ function Home() {
     `
 
     const HomeContainer = styled.div`
-        background: url(/background_mountain.gif) repeat-y center center fixed;
-        display: inline-block;
-        background-size: cover;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
+        // background-image: url(/background_mountain.gif);
+        // background-repeat: no-repeat; 
+        // background-size: cover;
+        // display: inline-block;
+        // position: fixed,
+        // height: 100vh;
+        // top: 0; 
+        // left: 0;  
+        // overflow-y: scroll;
+      
+        // @media (min-width: 972px) {
+        //     height: 100%;
+        //     background-attachment: fixed;
+        // }
+
+        // // @media (max-width: 972px) {
+        // //     position: fixed,
+        // //     height: 100vh;
+        // //     top: 0; 
+        // //     left: 0;  
+        // //     overflow-y: scroll;
+        // // }
+    
     `
 
-    return (
+    const Image = styled.img`
+        src: ${props => props.src};
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -999;
+    `
+
+    return ( 
         <HomeContainer>
+            <Image src="background_mountain.gif" />
             <Row>
                 {/* The parent element must be the whole page so the sticky element can stick! */}
                 <NavbarCol size={1}>

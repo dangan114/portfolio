@@ -20,7 +20,7 @@ function Intro() {
                     <h1 style={{fontSize: '100px'}}>
                         Hello.
                     </h1>
-                    <div style={{fontSize: '30px', padding: '0 3rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', backgroundColor: 'white', height: '100vh', opacity: 0.6}}>
+                    <div style={{fontSize: '30px', padding: '0 2rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', backgroundColor: 'white', height: '100vh', opacity: 0.6}}>
                         <div>
                             <Row>
                                 <Col size={1} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center'}}>

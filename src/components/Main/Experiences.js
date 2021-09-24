@@ -57,7 +57,7 @@ function Experiences() {
 
     const projectCard = projects.map(project => {
         return (
-            <Col size={1} style={{margin: '5rem 0'}}>
+            <Col size={1} style={{margin: '5rem'}}>
                 {/*  The project card */}
                 <Box>
                     <InnerBox>

@@ -8,6 +8,7 @@ export const Nav = styled.nav`
     height: 100vh;
     position: sticky;
     top: 0;
+    left: 0;
     opacity: 0.8;
 
     @media only screen and (max-width: 972px) {

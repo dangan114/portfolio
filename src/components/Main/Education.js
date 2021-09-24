@@ -84,7 +84,7 @@ function Education() {
                                 <div>
                                     <img src={e.logo} height="100%" width="100%" style={{objectFit: 'contain', display: 'inline-block'}}  />
                                     
-                                    <hr style={{position: 'relative', top: '5vh', height: '20vh', width: '1vw', backgroundColor: 'lightblue', border: 'none'}} />
+                                    <hr style={{position: 'relative', top: '4vh', height: '20vh', width: '1vw', backgroundColor: 'lightblue', border: 'none'}} />
                                 </div>
               
                             </LogoCol>
