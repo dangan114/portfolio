@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -9,10 +10,15 @@ function App() {
     font-family: 'Andale Mono, monospace';
     height: 100%;
     width: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     @media (max-width: 768px) {
       width: 768px;
     }
   `
+
+  useEffect(() => {
+    document.addEventListener("touchstart", function() {},false);
+  }, []);
 
   return (
     <MainContainer>
