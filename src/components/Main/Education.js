@@ -36,7 +36,7 @@ function Education() {
     `
 
     const SchoolList = styled.li`
-        list=style-type: none;
+        list-style-type: none;
         background-color: white;
         margin: 0 2rem;
         opacity: 0.75;

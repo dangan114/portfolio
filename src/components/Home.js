@@ -24,7 +24,7 @@ function Home() {
     `
 
     const HomeContainer = styled.div`
-        background: url(/background_mountain.gif) no-repeat center center fixed;
+        background: url(/background_mountain.gif) repeat-y center center fixed;
         display: inline-block;
         background-size: cover;
         -o-background-size: cover;
